@@ -9,7 +9,7 @@ layout: compress
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""><meta name="author" content="Christophe Dubach" >
 
-  <title>CC'18: {{ page.title }}</title>
+  <title>CC'19: {{ page.title }}</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
   <link href="{{ '/css/styles.css' | relative_url }}?v={{ site.cache_tag }}" rel="stylesheet" />
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,14 +30,14 @@ layout: compress
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ '/' | relative_url }}">CC 2018</a>
+          <a class="navbar-brand" href="{{ '/' | relative_url }}">CC 2019</a>
         </div> <!-- /.navbar-header -->
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <!-- li {% if page.url == "/" %}class="active"{% endif %}><a href="{{ '/' | relative_url }}">Home</a></li -->
+	    <!-- li {% if page.url == "/" %}class="active"{% endif %}><a href="{{ '/' | relative_url }}">Home</a></li -->
+<!--	    
 	    <li class="dropdown">
-<!--
 	      <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" id="program-dropdown" role="button">
                 Program
                 <b class="caret"></b>
@@ -49,6 +49,7 @@ layout: compress
             </li>
 -->
             <li {% if page.url == "/call/" %}class="active"{% endif %}><a href="{{ '/call/' | relative_url }}">Call For Papers</a></li>
+<!--
             <li class="dropdown">
 	      <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" id="attending-dropdown" role="button">
                 Attending
@@ -58,6 +59,7 @@ layout: compress
 			<li {% if page.url == "/venue/" %}class="active"{% endif %}><a href="{{ '/venue/' | relative_url }}">Venue and Travel</a></li>
 		</ul>
 	    </li>
+-->
             <li {% if page.url == "/organization/" %}class="active"{% endif %}><a href="{{ '/organization/' | relative_url }}">Organization</a></li>
           </ul> <!-- /.navbar-nav -->
 
@@ -68,6 +70,7 @@ layout: compress
                 <b class="caret"></b>
               </a>
               <ul aria-labelledby="past-cgos-dropdown" class="dropdown-menu">
+		<li><a href="https://cc-conference.github.io/18/">2018</a></li>
                 <li><a href="http://conf.researchr.org/home/CC-2017">2017</a></li>
 		<li><a href="http://cc2016.eew.technion.ac.il/">2016</a></li>
 		<li><a href="http://www.etaps.org/index.php/2015/cc">2015</a></li>
