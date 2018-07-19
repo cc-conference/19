@@ -27,5 +27,6 @@ Check to see everything works: [https://cc-conference.github.io/18/]
 
 J. Nelson Amaral, July 2018:
 
-- As of now, I cannot figure out how the site is generated automatically. It seems that the layout files should be generated automatically. But I cannot see where the menus are specified. Thus, to remove the "Program" and "Attending" menus (for which we do not have content at the moment), I commented out the corresponding <li> entries in the file -layouts/default.html
+- As of now, I cannot figure out how the site is generated automatically. It seems that the layout files should be generated automatically. But I cannot see where the menus are specified. Thus, to remove the "Program" and "Attending" menus (for which we do not have content at the moment), I commented out the corresponding <li> entries in the file _layouts/default.html
 
+- I also added CC18 to the "Previous CCs" at the bottom of the file _layouts/default.html
