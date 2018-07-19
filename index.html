@@ -2,50 +2,24 @@
 title:  28th International Conference on Compiler Construction 2019
 ---
 
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" defer></script>
+<script src="/js/lightsliderrun.js" defer></script>
 
- <div class="slideshow-container">
-
-  <div class="mySlides fade">
-      <img src="./style/banner.jpg" style="width:850px; height:268px;">
+<div style="padding-bottom:0;" class="jumbotron">
+  <div class="container">
+    <ul style="width:100%; height:100%;" id="lightSlider">
+      {% for image in site.static_files %}
+      {% if image.path contains 'img/banner/' %}
+      <li>
+        <img src="{{ site.baseurl }}{{ image.path }}">
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
   </div>
-
-  <div class="mySlides fade">
-     <img src="./style/dc.jpg" style="width:850px; height: 268px;">
-  </div>
-
-  <div class="mySlides fade">
-   <img src="./style/capitalhill.jpg" style="width:850px; height:268px;">
-  </div>
-  </div>
-
-  <div style="text-align:center">
-   <span class="dot"></span> 
-   <span class="dot"></span> 
-   <span class="dot"></span> 
-  </div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-  </script>
-  
+</div>
 <section class="no-top-padding">
   <div class="container">
     <div class="row">
