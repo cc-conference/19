@@ -17,6 +17,14 @@ Then test it locally using a local webserver (this will make sure the website ge
 
 `bundle exec jekyll serve --incremental`
 
+To continuously update the local copy of the website while changing it use the command:
+
+`bundle exec jekyll serve --watch`
+
+To see the local version go to the following URL:
+
+http://localhost:4000/
+
 Once done with changes:
 
 `git commit -a`
@@ -27,6 +35,8 @@ Check to see everything works: [https://cc-conference.github.io/18/]
 
 J. Nelson Amaral, July 2018:
 
-- As of now, I cannot figure out how the site is generated automatically. It seems that the layout files should be generated automatically. But I cannot see where the menus are specified. Thus, to remove the "Program" and "Attending" menus (for which we do not have content at the moment), I commented out the corresponding <li> entries in the file _layouts/default.html
+- To remove the "Program" and "Attending" menus (for which there is no content when the site is first created for a new edition of the conference), comment out the corresponding <li> entries in the file _layouts/default.html
+
+
 
 - I also added CC18 to the "Previous CCs" at the bottom of the file _layouts/default.html
